@@ -7,6 +7,7 @@ use App\Http\Controllers\BuyCart\OrderItemController;
 use App\Http\Controllers\BuyCart\OrderController;
 use App\Http\Controllers\BuyCart\OrderPaymentController;
 use App\Http\Controllers\BuyCart\PrecioPesoController;
+use App\Http\Controllers\BuyCart\ProyectoController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\SiteMapController;
@@ -57,7 +58,28 @@ Route::view('precio-peso-list', 'web/admin/precioPeso');
 
 Route::post('/login-user', [AuthController::class, 'login_user']);
 
+Route::get('perfil-usuario', [ClienteController::class, 'perfil_usuario']);
+Route::get('contar-items', [OrderItemController::class, 'contar_items']);
+Route::post('/approve-payment', [OrderPaymentController::class, 'approvePayment']);
+Route::post('/logout', [AuthController::class, 'logout']);
+Route::get('categorias-public', [CategoryController::class, 'index']);
+Route::get('proyectos-public', [ProyectoController::class, 'index']);
 
+Route::apiResources(
+    [
+        'cliente' => ClienteController::class,
+        'categorias' => CategoryController::class,
+        'order' => OrderController::class,
+        'order-item' => OrderItemController::class,
+        'garantia-retorno' => GarantiaRetornoController::class,
+        'precio-peso' => PrecioPesoController::class,
+        'manejo-aduana' => ManejoAduanaController::class,
+    ],
+    [
+        'parameters' => [],
+        'middleware' => ['auth:sanctum']
+    ]
+);
 
 
 Route::get('calcular-importacion', [OrderItemController::class, 'calcularImportacion']);

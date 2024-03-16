@@ -54,12 +54,7 @@ export default {
         // Calcula el ancho de las categorías después de cargarlas
         const totalCategories = self.categorias.length;
         self.categoryWidth = `${Math.floor(100 / (totalCategories / 2))}%`;
-        await buscar_amazon("verano")
-            .then((response) => response.json())
-            .then((data) => {
-                self.products = data.results;
-                self.isLoading = false;
-            });
+        self.products = await listados("proyectos-public");
         // Ejecutar el código cuando el componente ha sido montado
         this.$nextTick(() => {
             const modal = document.querySelector(".modal") as HTMLElement;

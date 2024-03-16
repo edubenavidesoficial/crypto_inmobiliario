@@ -23,27 +23,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('perfil-usuario', [ClienteController::class, 'perfil_usuario']);
-Route::get('contar-items', [OrderItemController::class, 'contar_items']);
-Route::post('/approve-payment', [OrderPaymentController::class, 'approvePayment']);
-Route::post('/logout', [AuthController::class, 'logout']);
-Route::get('categorias-public', [CategoryController::class, 'index']);
-
-Route::apiResources(
-    [
-        'cliente' => ClienteController::class,
-        'categorias' => CategoryController::class,
-        'order' => OrderController::class,
-        'order-item' => OrderItemController::class,
-        'garantia-retorno' => GarantiaRetornoController::class,
-        'precio-peso' => PrecioPesoController::class,
-        'manejo-aduana' => ManejoAduanaController::class,
-    ],
-    [
-        'parameters' => [],
-        'middleware' => ['auth:sanctum']
-    ]
-);
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

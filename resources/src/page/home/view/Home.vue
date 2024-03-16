@@ -838,17 +838,14 @@
                 />
                 <div class="card-body-product">
                   <div class="card-text-product">
-                    <div class="product-name">{{ product.title }}</div>
+                    <div class="product-name">{{ product.nombre }}</div>
                     <div class="product-price">
-                      S/{{ formatear_precio_total(product.price, 2)
-                      }}<span class="cat"
-                        ><del>
-                          {{ formatear_precio_total(product.price * 1.1, 2) }}</del
+                      ${{ product.precio}}<span class="cat"
                         ></span
                       >
                     </div>
                     <div class="product-review">
-                      Compras: {{ product.num_reviews }}
+                      Compras: {{ product.category }}
                       <a @click="irProducto(product)" class="normal-cart"
                         ><img
                           src="images/icons/cart.png"
