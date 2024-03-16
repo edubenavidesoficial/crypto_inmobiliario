@@ -1,13 +1,48 @@
 {
     "private": true,
-    "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build"
     },
     "devDependencies": {
-        "axios": "^1.6.4",
-        "laravel-vite-plugin": "^1.0.0",
-        "vite": "^5.0.0"
+        "@popperjs/core": "^2.11.8",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "axios": "^0.27.2",
+        "bootstrap": "^5.3.2",
+        "laravel-vite-plugin": "^0.5.0",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "sass": "^1.69.5",
+        "vite": "^3.0.0",
+        "vue": "^3.4.15"
+    },
+    "dependencies": {
+        "@vitejs/plugin-vue": "^4.5.2",
+        "boostrap": "^2.0.0",
+        "bootstrap-icons": "^1.11.3",
+        "bootstrap-vue": "^2.23.1",
+        "datatables.net-bs5": "^1.13.8",
+        "datatables.net-buttons-bs5": "^2.4.2",
+        "datatables.net-responsive-bs5": "^2.5.0",
+        "datatables.net-select": "^1.7.0",
+        "datatables.net-vue3": "^2.1.3",
+        "jszip": "^3.10.1",
+        "pdfmake": "^0.2.9",
+        "sweetalert2": "^11.10.3",
+        "v-file-upload": "^3.1.7",
+        "vue-3-slider-component": "^0.1.2",
+        "vue-core-image-upload": "^2.4.14",
+        "vue-file-agent": "^1.7.3",
+        "vue-google-translate": "^0.0.13",
+        "vue-image-input": "^1.0.0",
+        "vue-loader": "^17.3.1",
+        "vue-loading-overlay": "^6.0.3",
+        "vue-media-upload": "^2.1.2",
+        "vue-sweetalert2": "^5.0.5",
+        "vue3-carousel": "^0.3.1",
+        "vue3-easy-data-table": "^1.5.47",
+        "vuetify": "^3.5.1",
+        "vuetify-loader": "^1.9.2",
+        "vuex": "^4.0.2"
     }
 }

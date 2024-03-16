@@ -1,0 +1,225 @@
+.product-image-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product-image-box {
+    position: relative;
+}
+
+#wrap {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.product-image {
+    margin: 0 auto;
+}
+
+.cloud-zoom, .cloud-zoom-gallery {
+    display: block;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.figcaption {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.information-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.product-variations,
+.product-information {
+    margin-top: 20px;
+}
+
+.variations-options {
+    text-align: left;
+}
+
+.option-container {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.detail-availability_message,
+.detail-brand,
+.detail-weight,
+.detail-return_message,
+.detail-vendor_name,
+.detail-sku,
+.detail-product_warranty {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.limited-list {
+    text-align: justify;
+}
+
+.see-more-button {
+    cursor: pointer;
+    color: #007bff;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.product-price-container {
+    background-color: #fff3e03b;
+    border-radius: 23px;
+    box-shadow: 0px 4px 8px rgb(193, 193, 193);
+    overflow: hidden;
+}
+
+.product-prices {
+    padding: 20px;
+}
+
+.favorite_icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('https://tiendamia.com/skin/frontend/traigo/traigo/images/favorite_icon.png') no-repeat center center;
+    cursor: pointer;
+}
+
+.price-line-list_price,
+.price-line-save_price,
+.price-line-final_price {
+    margin: 10px 0;
+}
+
+.notranslate.promo_prex_bf {
+    background-color: #E8CAFD;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #c97917;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.configurable_warranty {
+    background: #f1efef;
+    padding: 9px 0;
+    text-align: center;
+}
+
+.price-line-shipping_cost,
+.price-line-delivery_promise {
+    margin-top: 10px;
+    color: #333333;
+}
+
+.clear10px {
+    clear: both;
+    height: 10px;
+}
+
+.clear20px {
+    clear: both;
+    height: 20px;
+}
+
+.add-to-cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f1efef;
+    border-top: 1px solid #ddd;
+}
+
+.quantity-input-container {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    width: 50px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.payment-logos {
+    display: flex;
+    align-items: center;
+}
+
+.payment-logos img {
+    margin-right: 10px;
+}
+
+.button-cart {
+    font-size: 16px;
+    background-color: #430070;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-cart:hover {
+    background-color: #330055;
+}
+
+.shipping-from-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.shipping-from-container img {
+    width: 100%;
+    max-width: 252px;
+    height: auto;
+}
