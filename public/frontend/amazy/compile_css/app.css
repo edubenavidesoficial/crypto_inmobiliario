@@ -8259,7 +8259,7 @@ fieldset:disabled .btn {
 }
 
 .bg-white {
-  background-color: #ff8d0b !important
+  background-color: #687083 !important
 }
 
 .bg-transparent {
@@ -28039,24 +28039,24 @@ button.toast-close-button {
 /*------------------------------------------------------------------
 [Master Stylesheet] - [Table of contents]
 
- 1. Theme default css 
+ 1. Theme default css
  2. Header styles [header 1 - header10 ]
  3. Mobile Menu
  4 . predefine
  5. contact
  6. bradcam
  7 footer [footer - footer10]
- 8. banner 
- 9. category 
+ 8. banner
+ 9. category
  10. new_arrival
  11. deal
  12. processing
- 13. brand 
+ 13. brand
  14. blog
  15. products
  16. cart
  17. product_details
- 18. checkout 
+ 18. checkout
  19. about
  20. team
  21. blog_details
@@ -33782,7 +33782,7 @@ header.amazcartui_header .header_area .header_topbar_area .header__wrapper .head
 }
 
 header.amazcartui_header .header_area .header_top_area {
-  background: #ff8c09;
+  background: #474b4e ;
   padding: 12px 0px;
   border: 0;
 }

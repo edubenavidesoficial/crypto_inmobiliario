@@ -4,24 +4,6 @@
                  :is-full-page="fullPage"/>
   <!-- HEADER::START -->
   <div class="promotion_bar position-relative top-0 start-0 w-100 d-lg-block">
-    <div class="promotion_bar_wrapper d-flex align-items-center justify-content-center position-relative">
-      <span class="d-flex menu-normal-2 app-m" @click="openModal('modal2')">
-        Envío gratis en cada pedido
-      </span>
-      <span class="d-flexx menu-normal-2" style="background: none;" ref="animatedList" @click="openModal('modal3')">
-        <li v-for="(item, index) in listItems" :key="index" :class="{ 'active': index === activeIndex }"
-          class="text-center my-3">
-          {{ item.title }}
-          <p style=" color: #ffffff">{{ item.description }}</p>
-        </li>
-      </span>
-      <span class="d-flex menu-normal-2 app-m" @click="openModal('modal4')">Descarga nuestra app</span>
-      <span class="close_promobar gj-cursor-pointer d-inline-flex align-items-center justify-content-center"
-        id="promotion_close">
-        <i class="ti-close"></i>
-      </span>
-    </div>
-
   </div>
   <header class="amazcartui_header">
     <div id="sticky-header" class="header_area">
@@ -257,7 +239,7 @@
                 <div class="header__left d-flex align-items-center">
                   <div class="logo_img">
                     <a href="/">
-                      <img src="uploads/settings/65284ca307ab2.png" alt="Pulentaa" title="Pulentaa" />
+                      <img src="" alt="Logo" title="Logo" />
                     </a>
                   </div>
                 </div>
@@ -284,9 +266,7 @@
                   </div>
                 </div>
                 <div class=" d-flex align-items-center justify-content-center position-relative">
-                  <span class="d-flex menu-normal-3 app-m" v-on:click="enlace('San Valentín')">
-                    <i class='far fa-heart' style='font-size:15px;padding-top: 4px;padding-right: 3px;'></i> San Valentín
-                  </span>
+
                   <span class="d-flex menu-normal-3 app-m" v-on:click="enlace('Ofertas')">Últimas novedades</span>
                   <!-- Tu elemento span con el menú desplegable -->
                   <div class="dropdown">

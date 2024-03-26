@@ -15,7 +15,7 @@
                     <div class="form-section align-self-center">
                         <div class="logo-2 logo">
                             <a href="login">
-                                <img src="uploads/settings/65284ca307ab2.png" alt="logo">
+                                <img src="" alt="logo">
                             </a>
                         </div>
                         <h3>Iniciar sesión en su cuenta.</h3>
@@ -73,10 +73,10 @@
                             <div class="content">
                                 <div class="logo-2">
                                     <a href="login">
-                                    <img src="uploads/settings/65284ca307ab2.png" alt="logo">
+                                    <img src="" alt="logo">
                                     </a>
                                 </div>
-                                <h3>Bienvenido a Pulentaa</h3>
+                                <h3>Bienvenido a Realty Lux</h3>
                                 <div class="social-list">
                                     <a href="#" class="facebook-bg">
                                         <i class="fa fa-facebook"></i>

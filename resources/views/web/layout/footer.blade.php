@@ -1,12 +1,12 @@
     <!-- FOOTER::START  -->
-    
+
     <footer class="footer_pulenta">
         <div class="mainContent">
             <div class="On_hxEUn">
                 <div class="_1OcLeWs0">
                     <h6 class="_2s6AoEQ-">Información de la empresa</h6>
                     <ul class="bKTvgBoH">
-                        <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Acerca de Pulenta</a></li>
+                        <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Acerca de RealtyLux</a></li>
                         <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Programa de afiliados</a></li>
                         <li class="_3FUsk_Xl"><a href="contactos" rel="">Contáctanos</a></li>
                         <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Blog</a></li>
@@ -24,13 +24,13 @@
                     <h6 class="_2s6AoEQ-">Ayuda</h6>
                     <ul class="bKTvgBoH">
                         <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Centro de ayuda y preguntas frecuentes</a></li>
-                        <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Protección de compras de Pulenta</a></li>
+                        <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Protección de compras de RealtyLux</a></li>
                         <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Mapa del sitio</a></li>
-                        <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Vender en Pulenta</a></li>
+                        <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Vender en RealtyLux</a></li>
                     </ul>
                 </div>
                 <div class="nr7lp_um">
-                        <h6 class="_2s6AoEQ-">Descarga la App de Pulenta</h6>
+                        <h6 class="_2s6AoEQ-">Descarga la App de RealtyLux</h6>
 
                     <div class="_1ryfdDdl"><a href="" class="_3VEjS46S _2vupTVSV" rel="">
                             <div class="_14GcF50W">
@@ -47,7 +47,7 @@
                         </a></div>
                 </div>
                 <div class="_3Ye8DDeE">
-                    <h6 class="_2s6AoEQ-">Conectar con Pulenta</h6>
+                    <h6 class="_2s6AoEQ-">Conectar con RealtyLux</h6>
                     <div class="_39XtDA6R">
                         <a href="" class="_29LEYmI3 ha" target="_blank"><i class='fab fa-tiktok' style='font-size:28px'></i></a>
                         <a href="" class="_29LEYmI3 ha" target="_blank"><i class='fab fa-youtube' style='font-size:28px'></i></a>
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="ODr-INpl">
-                <div class="_140wlebY">© 2024 Pulentaa.</div>
+                <div class="_140wlebY">© 2024 RealtyLux.</div>
                 <div class="eH4ddcu6">
                     <a href="" class="_3VEjS46S _2iFcK6Hc" rel=""><span class="-PIaGGF6">Términos de uso</span></a>
                     <a href="" class="_3VEjS46S _2iFcK6Hc" rel=""><span class="-PIaGGF6">Política de privacidad</span></a>
@@ -129,7 +129,7 @@
     .ha{
     border-radius: 13px;
     background: #ff8c09;
-}        
+}
     </style>
     </body>
 

@@ -14,7 +14,7 @@
             <div class="form-section clearfix">
               <div class="logo-2 logo">
                 <a href="login">
-                  <img src="assets/img/logos/logo-2.png" alt="logo" />
+                  <img src="" alt="logo" />
                 </a>
               </div>
               <h3>Crea una cuenta.</h3>
@@ -112,7 +112,7 @@
                 <div class="content">
                   <div class="logo-2">
                     <a href="login">
-                      <img src="uploads/settings/65284ca307ab2.png" alt="logo" />
+                      <img src="" alt="logo" />
                     </a>
                   </div>
                   <h3>Pulentaa</h3>

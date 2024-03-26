@@ -1,6 +1,6 @@
 :root {
     --background_color: #f4f7f9;
-    --base_color: #ff8c09;
+    --base_color: #9c9c9b;
     --text_color: #222248;
     --feature_color: #222248;
     --footer_background_color: #f4f7f9;
@@ -248,7 +248,7 @@
 
 @media only screen and (max-width: 767px) {
     #category-container {
-        justify-content: center; 
+        justify-content: center;
     }
 
     .min {
@@ -309,7 +309,7 @@
     bottom: 20px;
     left: 20px;
   }
-  
+
   /* Estilos para el icono del botón flotante */
   .fixed-action-btn i {
     font-size: 24px;
@@ -339,7 +339,7 @@
     .footer_pulenta {
       display: none;
     }
-  }  
+  }
 
 .mainContent {
     min-width: 1080px;
@@ -544,7 +544,7 @@ img {
         border-radius: 13px;
         width: 12rem
   }
- 
+
   @media (max-width: 767px) {
     .product-img {
         margin-bottom: 10px;
@@ -557,31 +557,31 @@ img {
         padding: 2px!important;;
         font-size: 0.7rem!important;
     }
-  }  
-  
+  }
+
   .card-img-top {
     height: 200px;
-    object-fit: cover; 
-    border-radius: 12px !important; 
+    object-fit: cover;
+    border-radius: 12px !important;
   }
-  
+
   .card-body-product {
     padding: 10px;
   }
-  
+
   .card-text-product {
     font-size: 16px;
     color: #333;
   }
-  
+
   .product-name {
-    font-weight: bold; 
+    font-weight: bold;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
         max-width: 100%;
       }
-      
+
 
   .poduct-normal {
     border-radius: 23px;
@@ -625,7 +625,7 @@ img {
 .splide__slide {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-  
+
 .row-product > * {
     flex-shrink: 0;
     width: 200px;
@@ -655,12 +655,12 @@ img {
 
 /* Para navegadores basados en WebKit (como Chrome y Safari) */
 ::-webkit-scrollbar-thumb {
-    background-color: #ff8c09; /* Color de la barra de desplazamiento */
+    background-color: #4e697d ; /* Color de la barra de desplazamiento */
 }
 
 /* Para navegadores basados en WebKit (como Chrome y Safari) */
 ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; 
+    background-color: #f1f1f1;
 }
 
 /* Para navegadores de Microsoft (Edge) */

@@ -25,9 +25,9 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                       <img
-                        src="uploads/settings/65284ca307ab2.png"
-                        alt="Pulentaa"
-                        title="Pulentaa" height="23px"
+                        src=""
+                        alt="Logo"
+                        title="Logo" height="23px"
                       />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
