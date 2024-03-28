@@ -168,7 +168,7 @@
       <div class="container">
         <div id="more_products" class="amaz_recomanded_box mb_60">
           <div class="amaz_recomanded_box_head">
-            <h4 class="mb-0">MÁS PRODUCTOS QUE TE PUEDEN ENCANTAR</h4>
+            <h4 class="mb-0">MÁS INMUEBLES QUE TE PUEDEN ENCANTAR</h4>
           </div>
           <div class="container-a">
             <div class="row-a">
