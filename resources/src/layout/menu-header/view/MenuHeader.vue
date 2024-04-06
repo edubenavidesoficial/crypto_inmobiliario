@@ -164,7 +164,7 @@
                             <a class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                               aria-expanded="false">
                               <div class="language_toggle_btn gj-cursor-pointer d-flex align-items-center gap_10">
-                                <span class="usd">ES/SOL</span>
+                                <span class="usd">ES/USD</span>
                               </div>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -181,7 +181,7 @@
                                   <div class="lag_select">
                                     <span class="font_12 f_w_500 text-uppercase mb_10 d-block">Moneda</span>
                                     <select class="amaz_select6 wide" name="currency">
-                                      <option selected="" value="2">(S/) Sol</option>
+                                      <option selected="" value="2">($/) USD</option>
                                     </select>
                                   </div>
                                 </form>
@@ -239,7 +239,7 @@
                 <div class="header__left d-flex align-items-center">
                   <div class="logo_img">
                     <a href="/">
-                      <img src="" alt="Logo" title="Logo" />
+                      <img src="images/logo.png" width="60px" alt="Logo" title="Logo" />
                     </a>
                   </div>
                 </div>
@@ -318,7 +318,7 @@
                     class="single_top_lists position-relative me-3 d-flex align-items-center shoping_language d-lg-none d-inline-flex">
                     <div class="">
                       <div class="language_toggle_btn gj-cursor-pointer d-flex align-items-center gap_10">
-                        <span class="usd">/SOL</span>
+                        <span class="usd">/Cartera</span>
                       </div>
                     </div>
                   </div>
