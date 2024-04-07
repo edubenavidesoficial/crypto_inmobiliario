@@ -25,7 +25,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                       <img
-                        src=""
+                        src="/images/logo.png"
                         alt="Logo"
                         title="Logo" height="23px"
                       />

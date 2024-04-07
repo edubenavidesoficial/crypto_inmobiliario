@@ -14,7 +14,7 @@
             <div class="form-section clearfix">
               <div class="logo-2 logo">
                 <a href="login">
-                  <img src="" alt="logo" />
+                  <img src="/images/logo.png" alt="logo" />
                 </a>
               </div>
               <h3>Crea una cuenta.</h3>
@@ -112,10 +112,10 @@
                 <div class="content">
                   <div class="logo-2">
                     <a href="login">
-                      <img src="" alt="logo" />
+                      <img src="/images/logo.png" alt="logo" />
                     </a>
                   </div>
-                  <h3>Pulentaa</h3>
+                  <h3>Realty Lux</h3>
                   <div class="social-list">
                     <a href="#" class="facebook-bg">
                       <i class="fa fa-facebook"></i>

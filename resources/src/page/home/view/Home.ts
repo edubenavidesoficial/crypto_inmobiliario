@@ -34,12 +34,12 @@ export default {
     setup() {
         const carouselSlider = [
             {
-                url: "",
+                url: "/uploads/images/21-10-2023/6534076f83b65.jpg",
                 alt: "Slider Principal",
                 title: "Slider Principal",
             },
             {
-                url: "",
+                url: "/uploads/images/21-10-2023/6534076f83b66.jpg",
                 alt: "Slider Segundo",
                 title: "Slider Segundo",
             },
@@ -54,7 +54,7 @@ export default {
         // Calcula el ancho de las categorías después de cargarlas
         const totalCategories = self.categorias.length;
         self.categoryWidth = `${Math.floor(100 / (totalCategories / 2))}%`;
-        self.products = await listados("proyectos-public");
+      //  self.products = await listados("proyectos-public");
         // Ejecutar el código cuando el componente ha sido montado
         this.$nextTick(() => {
             const modal = document.querySelector(".modal") as HTMLElement;
@@ -77,13 +77,14 @@ export default {
     methods: {
         async busqueda(valor_buscado: string) {
             const self = this;
-            self.isLoading = true;
+            self.isLoading = false;
+          /*  self.isLoading = true;
             await buscar_amazon(valor_buscado)
                 .then((response) => response.json())
                 .then((data) => {
                     self.products = data.results;
                     self.isLoading = false;
-                });
+                });*/
         },
         irCategoria(categoria_name: string) {
             localStorage.removeItem("categoria_name");

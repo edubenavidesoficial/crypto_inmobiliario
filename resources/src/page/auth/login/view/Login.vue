@@ -15,7 +15,7 @@
                     <div class="form-section align-self-center">
                         <div class="logo-2 logo">
                             <a href="login">
-                                <img src="" alt="logo">
+                                <img src="images/logo.png" alt="logo">
                             </a>
                         </div>
                         <h3>Iniciar sesión en su cuenta.</h3>
@@ -73,7 +73,7 @@
                             <div class="content">
                                 <div class="logo-2">
                                     <a href="login">
-                                    <img src="" alt="logo">
+                                    <img src="/images/logo.png" alt="logo">
                                     </a>
                                 </div>
                                 <h3>Bienvenido a Realty Lux</h3>
