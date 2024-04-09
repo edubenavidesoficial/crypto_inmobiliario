@@ -1,4 +1,5 @@
 import { guardar, listados_api } from "../../../shared/AxiosRepository";
+import Web3 from 'web3';  
 
 export default {
     data() {
@@ -16,6 +17,7 @@ export default {
                 phone_number: "",
                 instructions: "",
             },
+            metaMaskInstalled: false,
         };
     },
     setup() {},
@@ -36,5 +38,22 @@ export default {
             location.href = "/";
             document.body.classList.add("transition");
         },
+        async connectToMetaMask() {
+            if (window.BinanceChain) { // Verificar si Binance Chain está disponible en lugar de Ethereum
+                const web3 = new Web3(window.BinanceChain);
+                try {
+                    const accounts = await window.BinanceChain.request({ method: 'eth_requestAccounts' });
+                    console.log('Conexión a MetaMask exitosa');
+                    console.log('Dirección del usuario:', accounts[0]);
+                } catch (error) {
+                    console.error('El usuario rechazó la conexión a MetaMask');
+                }
+            } else {
+                console.error('MetaMask no está instalado o no se ha conectado a Binance Smart Chain');
+            }
+        },
+    },
+    created() {
+        this.metaMaskInstalled = typeof window.BinanceChain !== 'undefined'; // Verificar si Binance Chain está disponible
     },
 };

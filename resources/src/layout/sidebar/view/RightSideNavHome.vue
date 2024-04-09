@@ -2,8 +2,13 @@
   <ul class="navbar-nav ms-auto" v-if="usuario === null">
     <!-- Authentication Links -->
     <li class="nav-item">
-      <a class="nav-link" href="/login">Iniciar sesion</a>
+      <!-- <a class="nav-link" href="/login">Iniciar sesion</a>-->
+      <div>
+    <p class="nav-link" v-if="!metaMaskInstalled">MetaMask no está instalado</p>
+    <button class="nav-link" v-else @click="connectToMetaMask">Conectar MetaMask</button>
+  </div>
     </li>
+    
     <li class="nav-item">
       <a class="nav-link" href="/register">/ Registro</a>
     </li>

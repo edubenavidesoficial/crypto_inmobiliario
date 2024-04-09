@@ -43,6 +43,7 @@
         "vue3-easy-data-table": "^1.5.47",
         "vuetify": "^3.5.1",
         "vuetify-loader": "^1.9.2",
-        "vuex": "^4.0.2"
+        "vuex": "^4.0.2",
+        "web3": "^4.7.0"
     }
 }

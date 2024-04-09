@@ -275,12 +275,10 @@
                       <a class="dropdown-item" href="#">Destacados</a>
                       <a class="dropdown-item" href="categorias-list">Mis Categorías</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Salir</a>
                     </div>
                   </div>
-
-
                 </div>
+                ..
                 <!-- header__right_start  -->
                 <div class="header_top_area_right">
                   <div class="wish_cart">
