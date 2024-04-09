@@ -1,5 +1,6 @@
 import { guardar, listados_api } from "../../../shared/AxiosRepository";
 import Web3 from 'web3';  
+import "../../../store/types.ts";
 
 export default {
     data() {
