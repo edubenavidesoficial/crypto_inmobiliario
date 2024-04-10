@@ -20,6 +20,6 @@ class Proyecto extends Model
     ];
     public function categoria()
     {
-        return $this->hasMany(Category::class, 'categories_id', 'id');
+        return $this->hasMany(Category::class, 'id', 'categories_id');
     }
 }

@@ -6,7 +6,7 @@
           <div class="col-3">
   <card>
     <div style="max-width: 100%; height: auto;">
-      <img src="images/icons/banner.jpg" style="max-width: 100%; height: auto;" alt="Banner Image">
+      <img src="images/filtro_categoria.jpg" style="max-width: 100%; height: auto;" alt="Banner Image">
     </div>
   </card>
   <div class="negro">

@@ -145,12 +145,17 @@ class OrderItemController extends Controller
     public function contar_items()
     {
         $user = Auth::user();
-        $cliente_id = $user->cliente->id;
-        $cantidad_carrito = OrderItem::with('order')->whereHas('order', function ($query) use ($cliente_id) {
-            $query->where('status', 'PENDIENTE');
-            $query->where('customer_id', $cliente_id);
-        })->count();
-        return response()->json(['cantidad_item' => $cantidad_carrito], 200);
+        $cantidad_carrito=0;
+        if($user){
+            $cliente_id = $user->cliente?->id;
+            $cantidad_carrito = OrderItem::with('order')->whereHas('order', function ($query) use ($cliente_id) {
+                $query->where('status', 'PENDIENTE');
+                $query->where('customer_id', $cliente_id);
+            })->count();
+        }
+            response()->json(['cantidad_item' => $cantidad_carrito], 200);
+
+
     }
     public function calcularImportacion(Request $request)
     {

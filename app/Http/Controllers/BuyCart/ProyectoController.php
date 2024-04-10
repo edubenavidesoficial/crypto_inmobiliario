@@ -15,10 +15,10 @@ class ProyectoController extends Controller
     public function index(Request $request)
     {
         if($request->home){
-            $results = Proyecto::with('subCategorias')->inRandomOrder()->limit(14)->get();
+            $results = Proyecto::with('categoria')->inRandomOrder()->limit(14)->get();
             return response()->json(compact('results'));
         }
-        $results = Proyecto::with('subCategorias')->get();
+        $results = Proyecto::with('categoria')->get();
         return response()->json(compact('results'));
     }
     public function store(ProyectoRequest $request)

@@ -54,7 +54,8 @@ export default {
         // Calcula el ancho de las categorías después de cargarlas
         const totalCategories = self.categorias.length;
         self.categoryWidth = `${Math.floor(100 / (totalCategories / 2))}%`;
-      //  self.products = await listados("proyectos-public");
+        self.products = await listados("proyectos-public");
+        self.isLoading = false;
         // Ejecutar el código cuando el componente ha sido montado
         this.$nextTick(() => {
             const modal = document.querySelector(".modal") as HTMLElement;

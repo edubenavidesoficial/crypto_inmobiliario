@@ -17,7 +17,21 @@ class ProyectSeeder extends Seeder
     {
         $datos = [
             [
-                1, 'Proyecto1', 'descripcion', '/images/categories/imagen_electronica.jpg', 150, 1, '2023-11-26 22:04:01', '2023-11-26 22:04:01'
+                1, 'Demo 1', 'descripcion', '/images/proyects/demo1.jpeg', 150, 1, '2023-11-26 22:04:01', '2023-11-26 22:04:01'
+            ], [
+                2, 'Demo 2', 'descripcion', '/images/proyects/demo2.jpeg', 150, 1, '2023-11-26 22:04:01', '2023-11-26 22:04:01'
+            ], [
+                3, 'Demo 3', 'descripcion', '/images/proyects/demo3.jpeg', 150, 1, '2023-11-26 22:04:01', '2023-11-26 22:04:01'
+            ], [
+                4, 'Demo 4', 'descripcion', '/images/proyects/demo4.jpeg', 150, 1, '2023-11-26 22:04:01', '2023-11-26 22:04:01'
+            ], [
+                5, 'Demo 5', 'descripcion', '/images/proyects/demo5.jpeg', 150, 1, '2023-11-26 22:04:01', '2023-11-26 22:04:01'
+            ], [
+                6, 'Demo 6', 'descripcion', '/images/proyects/demo6.jpeg', 150, 1, '2023-11-26 22:04:01', '2023-11-26 22:04:01'
+            ], [
+                7, 'Demo 7', 'descripcion', '/images/proyects/demo7.jpeg', 150, 1, '2023-11-26 22:04:01', '2023-11-26 22:04:01'
+            ], [
+                8, 'Demo 8', 'descripcion', '/images/proyects/demo8.jpeg', 150, 1, '2023-11-26 22:04:01', '2023-11-26 22:04:01'
             ],
         ];
         foreach ($datos as $fila) {
