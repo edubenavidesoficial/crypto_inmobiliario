@@ -18,7 +18,7 @@ class ProyectoController extends Controller
             $results = Proyecto::with('categoria')->inRandomOrder()->limit(14)->get();
             return response()->json(compact('results'));
         }
-        $results = Proyecto::with('categoria')->get();
+        $results = Proyecto::with('categoria')->filter()->get();
         return response()->json(compact('results'));
     }
     public function store(ProyectoRequest $request)

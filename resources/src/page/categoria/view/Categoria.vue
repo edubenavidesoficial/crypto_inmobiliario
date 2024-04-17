@@ -59,18 +59,51 @@
             <div class="col">
               <div id="more_products" class="amaz_recomanded_box mb_60">
           <div class="row row-product">
-            <div class="col" v-for="(product, index) in products" :key="index" style="padding: 8px" >
-              <div class="product-img" style="width: 12rem"  v-on:click ="irProducto(product)">
-                <img class="card-img-top" :src="product.image" :alt="product.title" />
+            <div
+              class="col"
+              v-for="(product, index) in products"
+              :key="index"
+              style="padding: 8px"
+            >
+              <div class="product-img">
+               <!--<img
+                  class="card-img-top"
+                  :src="product.imagen"
+                  :alt="product.nombre"
+                  @click="irProducto(product)"
+                />-->
+                <img
+                  class="card-img-top"
+                  :src="product.imagen"
+                  :alt="product.nombre"
+                />
                 <div class="card-body-product">
                   <div class="card-text-product">
-                    <div class="product-name">{{ product.title }}</div>
+                    <div class="product-name">{{ product.nombre }}</div>
                     <div class="product-price">
-                      S/{{ formatear_precio_total(product.price, 2) }} <span class="cat"><del> {{ formatear_precio_total(product.price * 1.1, 2) }}</del></span>
+                      ${{ product.precio}}<span class="cat"
+                        ></span
+                      >
                     </div>
-                    <div class="product-review">Compras: {{ product.num_reviews }}</div>
-                    <br>
-                    <a @click="irProducto(product)"  class="normal-cart"><img src="images/icons/cart.png" width="19px" /></a>
+                    <div class="product-review">
+                     <!-- <a @click="irProducto(product)" class="normal-cart"
+                        ><img
+                          src="images/icons/cart.png"
+                          style="vertical-align: text-top"
+                          width="19px"
+                        />
+                      </a>-->
+                      <a  class="normal-cart"
+                        ><img
+                          src="images/icons/cart.png"
+                          style="vertical-align: text-top"
+                          width="19px"
+                        />
+                      </a>
+                    </div>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
                   </div>
                 </div>
               </div>

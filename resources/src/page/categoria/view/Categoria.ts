@@ -1,11 +1,11 @@
 import * as bootstrap from 'bootstrap'
-import { buscar_amazon } from '../../../shared/AxiosRepository';
+import { buscar_amazon, listados_api } from '../../../shared/AxiosRepository';
 import { formatear_precio_total } from '../../../shared/Utils';
 
 export default{
     data() {
         return {
-            categoria:localStorage.getItem("categoria_name"),
+            categoria:localStorage.getItem("categoria_id"),
             products: [],
         };
     },
@@ -20,8 +20,7 @@ export default{
     },
     async mounted() {
         const self = this;
-          await buscar_amazon(self.categoria)
-            .then((response) => response.json())
+          await listados_api('proyectos-public',{categories_id:self.categoria})
             .then((data) => {
                 self.products = data.results;
             });

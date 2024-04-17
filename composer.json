@@ -8,10 +8,12 @@
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
         "illuminate/console": "*",
-        "intervention/image": "^2.7",        "laravel/framework": "^9.19",
+        "intervention/image": "^2.7",
+        "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^4.0",
+        "mehdi-fathi/eloquent-filter": "^4.2",
         "spatie/laravel-permission": "^6.2"
     },
     "require-dev": {

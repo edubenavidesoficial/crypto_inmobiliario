@@ -17,9 +17,9 @@ export default {
         };
     },
     setup() {
-        function irCategoria(categoria_name) {
-            localStorage.removeItem("categoria_name");
-            localStorage.setItem("categoria_name", categoria_name);
+        function irCategoria(categoria_id) {
+            localStorage.removeItem("categoria_id");
+            localStorage.setItem("categoria_id", categoria_id);
             location.href = "/categoria";
             document.body.classList.add("transition");
         }

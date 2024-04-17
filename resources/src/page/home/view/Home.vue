@@ -51,7 +51,7 @@
                 :style="{ width: categoryWidth }"
                 class="min"
               >
-                <a @click="irCategoria(category.name)">
+                <a @click="irCategoria(category.id)">
                   <div class="card_pulenta">
                     <img :src="category.image" :alt="category.name" />
                     <span class="cat">Desde S/00</span>

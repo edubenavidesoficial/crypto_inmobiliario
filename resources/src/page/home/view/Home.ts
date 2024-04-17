@@ -87,9 +87,9 @@ export default {
                     self.isLoading = false;
                 });*/
         },
-        irCategoria(categoria_name: string) {
-            localStorage.removeItem("categoria_name");
-            localStorage.setItem("categoria_name", categoria_name);
+        irCategoria(categoria_id: string) {
+            localStorage.removeItem("categoria_id");
+            localStorage.setItem("categoria_id", categoria_id);
             location.href = "/categoria";
             document.body.classList.add("transition");
         },

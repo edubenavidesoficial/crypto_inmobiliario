@@ -7,6 +7,7 @@ use App\Models\Category;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 
 class CategoryController extends Controller
@@ -17,7 +18,7 @@ class CategoryController extends Controller
             $results = Category::with('subCategorias')->inRandomOrder()->limit(14)->get();
             return response()->json(compact('results'));
         }
-        $results = Category::with('subCategorias')->get();
+        $results = Category::with('subCategorias')->filter()->get();
         return response()->json(compact('results'));
     }
     public function store(CategoryRequest $request)
