@@ -189,7 +189,7 @@
                     <button
                       type="button"
                       class="poduct-normal"
-                      v-on:click="busqueda(category.name)"
+                      v-on:click="busqueda(category.id)"
                     >
                       {{ category.name }}
                     </button>

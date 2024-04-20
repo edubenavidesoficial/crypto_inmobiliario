@@ -5,6 +5,7 @@ import {
     listados,
     buscar_amazon,
     listados_amazon,
+    listados_api,
 } from "../../../shared/AxiosRepository.ts";
 import {
     buscarProducto,
@@ -76,16 +77,14 @@ export default {
         });
     },
     methods: {
-        async busqueda(valor_buscado: string) {
+        async busqueda(categoria_id: string) {
             const self = this;
-            self.isLoading = false;
-          /*  self.isLoading = true;
-            await buscar_amazon(valor_buscado)
-                .then((response) => response.json())
-                .then((data) => {
-                    self.products = data.results;
-                    self.isLoading = false;
-                });*/
+            self.isLoading = true;
+            await listados_api('proyectos-public',{categories_id:categoria_id})
+            .then((data) => {
+                self.products = data.results;
+                self.isLoading = false;
+            });
         },
         irCategoria(categoria_id: string) {
             localStorage.removeItem("categoria_id");
