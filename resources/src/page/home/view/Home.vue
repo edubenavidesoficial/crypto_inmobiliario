@@ -207,16 +207,12 @@
               style="padding: 8px"
             >
               <div class="product-img">
-               <!--<img
-                  class="card-img-top"
-                  :src="product.imagen"
-                  :alt="product.nombre"
-                  @click="irProducto(product)"
-                />-->
                 <img
                   class="card-img-top"
                   :src="product.imagen"
                   :alt="product.nombre"
+                  @click="irProducto(product)"
+
                 />
                 <div class="card-body-product">
                   <div class="card-text-product">
@@ -227,14 +223,7 @@
                       >
                     </div>
                     <div class="product-review">
-                     <!-- <a @click="irProducto(product)" class="normal-cart"
-                        ><img
-                          src="images/icons/cart.png"
-                          style="vertical-align: text-top"
-                          width="19px"
-                        />
-                      </a>-->
-                      <a  class="normal-cart"
+                      <a @click="irProducto(product)"  class="normal-cart"
                         ><img
                           src="images/icons/cart.png"
                           style="vertical-align: text-top"

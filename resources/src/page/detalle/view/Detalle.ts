@@ -45,11 +45,11 @@ export default {
                     total: 0.0,
                     total_soles: 0.0,
                     precio_total: 0.0,
-                    precio_importacion:0.00,
+                    precio_importacion: 0.0,
                     price: 0.0,
                     quantity: 0,
-                    subtotal:0,
-                    costo_envio:0.00,
+                    subtotal: 0,
+                    costo_envio: 0.0,
                     code: "",
                 },
             },
@@ -69,10 +69,7 @@ export default {
             orden.product.name = product !== null ? product.title : "";
             orden.product.description =
                 product !== null ? product.product_description : "";
-            orden.product.price =
-                product !== null
-                    ? product.price
-                    : 0.0;
+            orden.product.price = product !== null ? product.price : 0.0;
             orden.product.code = product !== null ? product.asin : "";
             orden.product.transporte = product.transporte;
             orden.product.garantia_retorno = product.garantia_retorno;
@@ -80,11 +77,12 @@ export default {
             orden.product.manejo_aduana = product.manejo_aduana;
             orden.product.cif = product.cif;
             orden.product.impuesto_aduana = product.impuesto_aduana;
-            orden.product.cargos_totales_importacion =   product.cargos_totales_importacion;
+            orden.product.cargos_totales_importacion =
+                product.cargos_totales_importacion;
             orden.product.total = product.precio_total;
             orden.product.precio_total = product.precio_total;
-            orden.product.subtotal = product.price*orden.product.quantity;
-            orden.product.costo_envio = product.total_soles
+            orden.product.subtotal = product.price * orden.product.quantity;
+            orden.product.costo_envio = product.total_soles;
             orden.product.precio_importacion = product.precio_importacion;
             await guardar("order", orden).then((result_order) => {
                 notificacion
@@ -122,10 +120,7 @@ export default {
             orden.product.name = product !== null ? product.title : "";
             orden.product.description =
                 product !== null ? product.product_description : "";
-            orden.product.price =
-                product !== null
-                    ? product.price
-                    : 0.0;
+            orden.product.price = product !== null ? product.price : 0.0;
             orden.product.code = product !== null ? product.asin : "";
             orden.product.transporte = product.transporte;
             orden.product.garantia_retorno = product.garantia_retorno;
@@ -133,11 +128,12 @@ export default {
             orden.product.manejo_aduana = product.manejo_aduana;
             orden.product.cif = product.cif;
             orden.product.impuesto_aduana = product.impuesto_aduana;
-            orden.product.cargos_totales_importacion =   product.cargos_totales_importacion;
+            orden.product.cargos_totales_importacion =
+                product.cargos_totales_importacion;
             orden.product.total = product.precio_total;
             orden.product.precio_total = product.precio_total;
-            orden.product.costo_envio = product.total_soles
-            orden.product.subtotal = product.price*orden.product.quantity;
+            orden.product.costo_envio = product.total_soles;
+            orden.product.subtotal = product.price * orden.product.quantity;
             orden.product.precio_importacion = product.precio_importacion;
             await guardar("order-item", orden.product).then((result_order) => {
                 notificacion
@@ -160,42 +156,17 @@ export default {
         }
         async function onSelectedValueChange() {
             this.isLoading = true;
-            await detalle_producto(this.product_id)
-                .then((response) => response.json())
-                .then(async (data) => {
+            await listados_api('proyectos-public',{id: this.product_id})
+                .then(async (response) => {
+                    const data = response.results[0];
                     this.product = data;
                     this.isLoading = false;
                 });
-            const precio =
-                parseFloat(formatear_precio_dolar(this.product.price, 2)) *
-                this.orden.product.quantity;
-            const peso =
-                this.product.package_dimensions !== undefined
-                    ? this.product.package_dimensions.weight.amount *
-                      this.orden.product.quantity
-                    : 0;
-            this.product.price =
+
+            this.product.precio =
                 parseFloat(
-                    formatear_precio_total(this.product.price, 2).toString()
+                    formatear_precio_total(this.product.precio, 2).toString()
                 ) * this.orden.product.quantity;
-            await listados_api("calcular-importacion", {
-                peso: peso,
-                precio: precio,
-            }).then((response) => {
-                const data = response[0];
-                this.product.transporte = data.transporte;
-                this.product.garantia_retorno = data.garantia_retorno;
-                this.product.seguro = data.seguro;
-                this.product.manejo_aduana = data.manejo_aduana;
-                this.product.cif = data.cif;
-                this.product.impuesto_aduana = data.impuesto_aduana;
-                this.product.cargos_totales_importacion =
-                    data.cargos_totales_importacion;
-                this.product.total = data.total;
-                this.product.total_soles = data.total_soles;
-                this.product.precio_importacion = data.precio_importacion;
-                this.product.precio_total = data.precio_total;
-            });
         }
         return {
             formatear_precio_total,
@@ -206,33 +177,11 @@ export default {
     },
     async mounted() {
         const self = this;
-        await detalle_producto(self.product_id)
-            .then((response) => response.json())
-            .then(async (data) => {
+        await listados_api('proyectos-public',{id: self.product_id})
+            .then((response) => {
+                const data = response.results[0];
                 self.product = data;
                 self.isLoading = false;
             });
-        await listados_api("calcular-importacion", {
-            peso:
-                this.product.package_dimensions !== undefined
-                    ? this.product.package_dimensions.weight.amount
-                    : 0,
-            precio: formatear_precio_dolar(self.product.price, 2),
-        }).then((response) => {
-            const data = response[0];
-            self.product.price = formatear_precio_total(self.product.price, 2);
-            self.product.transporte = data.transporte;
-            self.product.garantia_retorno = data.garantia_retorno;
-            self.product.seguro = data.seguro;
-            self.product.manejo_aduana = data.manejo_aduana;
-            self.product.cif = data.cif;
-            self.product.impuesto_aduana = data.impuesto_aduana;
-            self.product.cargos_totales_importacion =
-                data.cargos_totales_importacion;
-            self.product.precio_importacion = data.precio_importacion;
-            self.product.total = data.total;
-            self.product.total_soles = data.total_soles;
-            self.product.precio_total = data.precio_total;
-        });
     },
 };

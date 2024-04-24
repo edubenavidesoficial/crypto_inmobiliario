@@ -30,20 +30,11 @@ export function formatear_precio_dolar(valor_precio, numeroDeCerosDecimales) {
     return parseFloat(resultado).toFixed(2);
 }
 export function formatear_precio_total(valor_precio, numeroDeCerosDecimales) {
-    let numero = parseFloat(
-        formatear_precio(valor_precio, numeroDeCerosDecimales)
-    );
+    let numero = parseFloat(valor_precio);
     let precio_total = numero;
-    if (Number.isInteger(precio_total)) {
-        precio_total -= 0.01;
-    }
-    if (precio_total % 100 === 1) {
-        const numero_formateado = precio_total + 99;
-        return numero_formateado;
-    }
     return Math.abs(precio_total).toFixed(numeroDeCerosDecimales);
 }
-export async  function buscarProducto(criterio_busqueda: string) {
+export async function buscarProducto(criterio_busqueda: string) {
     const response = await buscar_amazon(criterio_busqueda);
     const data = await response.json();
     ProductAmazonStore.dispatch("setProductsAction", data.results);

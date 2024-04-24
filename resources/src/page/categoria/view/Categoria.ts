@@ -12,7 +12,7 @@ export default{
     setup() {
         function irProducto(producto){
             localStorage.removeItem('product_id');
-            localStorage.setItem('product_id', producto.product_id);
+            localStorage.setItem('product_id', producto.id);
             location.href = "/detalle";
             document.body.classList.add("transition");
         }
