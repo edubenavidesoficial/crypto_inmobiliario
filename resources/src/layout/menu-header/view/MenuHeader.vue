@@ -170,7 +170,7 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                               <a class="dropdown-item" href="#">
                                 <form action="https://realty-lux.com/locale" method="POST">
-                                  <input type="hidden" name="_token" value="JQqkU7qjztevnzrqit7r4j2LEmGH4KxVYXfNRFTq" />
+                                  <input type="hidden" name="_token" value="lux" />
                                   <div class="lag_select">
                                     <span class="font_12 f_w_500 text-uppercase mb_10 d-block">Language</span>
                                     <select class="amaz_select6 wide mb_20" name="lang">
