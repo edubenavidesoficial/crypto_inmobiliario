@@ -74,7 +74,7 @@
                                     margin-bottom: 0px;
                                 "
                             >
-                                Producto
+                                Inmueble
                             </h1>
                             <div class="card">
                                 <p id="product-name" class="titulo">
@@ -107,16 +107,12 @@
                                     <h1>Detalle Precio</h1>
                                 </div>
                                 <p class="detail-vendor_name">
-                                    Cantidad:
-                                    <select
-                                        v-model="orden.product.quantity"
-                                        @change="onSelectedValueChange"
-                                    >
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </p>
+    Cantidad:
+    <select v-model="orden.product.quantity" @change="onSelectedValueChange">
+        <option v-for="i in 10" :key="i">{{ i }}</option>
+    </select>
+    </p>
+
                                 <button
                                     type="button"
                                     class="poduct-normal"
@@ -124,7 +120,7 @@
                                     title="Agregar al carrito"
                                     v-on:click="realizar_pedido"
                                 >
-                                    Agregar al carrito
+                                    Agregar
                                 </button>
                                 <br />
                                 <br />
@@ -132,7 +128,7 @@
                                 <div
                                     class="limited-list list-detail detail-short_desc"
                                 >
-                                    <h3>Detalles del producto</h3>
+                                    <h3>Detalles del inmueble</h3>
                                     <div class="see-more-blur blur-short_desc">
                                         {{
                                             product !== null
@@ -157,153 +153,39 @@
                                     <h2>Más información para tu compra</h2>
                                 </div>
                                 <div id="accordion">
-                                    <!-- Pregunta 1 -->
-                                    <div class="card-det">
-                                        <div
-                                            class="card-header"
-                                            id="headingOne"
-                                        >
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseOne"
-                                                    aria-expanded="true"
-                                                    aria-controls="collapseOne"
-                                                >
-                                                    ¿(Producto)... tiene
-                                                    devolución?
-                                                </button>
-                                            </h2>
-                                        </div>
+    <!-- Pregunta 1 -->
+    <div class="card-det">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    ¿Cómo puedo adquirir tokens de inmuebles en Binance Smart Chain?
+                </button>
+            </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                Puedes adquirir tokens de inmuebles en Binance Smart Chain a través de plataformas de intercambio especializadas en activos tokenizados. Una vez que tengas BNB (la moneda nativa de Binance Smart Chain), puedes intercambiarlos por tokens de inmuebles disponibles en dichas plataformas.
+            </div>
+        </div>
+    </div>
 
-                                        <div
-                                            id="collapseOne"
-                                            class="collapse show"
-                                            aria-labelledby="headingOne"
-                                            data-parent="#accordion"
-                                        >
-                                            <div class="card-body">
-                                                Si, usted puede devolver el
-                                                producto a nuestras oficinas de
-                                                Miami (USA). Para ello se debe
-                                                solicitar la devolución en su
-                                                cuenta de Tiendamia dentro de
-                                                los primeros 7 días de haber
-                                                recibido el paquete. Los costos
-                                                de devolución corren por cuenta
-                                                del cliente. Más información en
-                                                <a target="_blank" href="#"
-                                                    >Políticas de devolución</a
-                                                >
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Pregunta 2 -->
+    <div class="card-det">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Qué garantías tengo al adquirir tokens de inmuebles en Binance Smart Chain?
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                Al adquirir tokens de inmuebles en Binance Smart Chain, cuentas con la garantía de que la transacción se registra en una cadena de bloques pública y descentralizada, lo que brinda transparencia y seguridad. Sin embargo, es importante investigar y verificar la legitimidad de los proyectos inmobiliarios respaldados por estos tokens, así como comprender los riesgos asociados con la volatilidad del mercado de criptomonedas.
+            </div>
+        </div>
+    </div>
+</div>
 
-                                    <!-- Pregunta 2 -->
-                                    <div class="card-det">
-                                        <div
-                                            class="card-header"
-                                            id="headingTwo"
-                                        >
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link collapsed"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseTwo"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseTwo"
-                                                >
-                                                    ¿A qué tienda pertenece este
-                                                    producto?
-                                                </button>
-                                            </h2>
-                                        </div>
-                                        <div
-                                            id="collapseTwo"
-                                            class="collapse"
-                                            aria-labelledby="headingTwo"
-                                            data-parent="#accordion"
-                                        >
-                                            <div class="card-body">
-                                                (Producto) pertenece al catálogo
-                                                de Vendedor verificado
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Pregunta 3 -->
-                                    <div class="card-det">
-                                        <div
-                                            class="card-header"
-                                            id="headingThree"
-                                        >
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link collapsed"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseThree"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseThree"
-                                                >
-                                                    ¿Cuánto demora el envío de
-                                                    SSD portátil SanDisk
-                                                    Extre...?
-                                                </button>
-                                            </h2>
-                                        </div>
-                                        <div
-                                            id="collapseThree"
-                                            class="collapse"
-                                            aria-labelledby="headingThree"
-                                            data-parent="#accordion"
-                                        >
-                                            <div class="card-body">
-                                                Los tiempos de envío pueden
-                                                variar según el producto. Recibí
-                                                (Producto) en tu casa en un
-                                                tiempo de entre 2 y 6 días.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Pregunta 4 -->
-                                    <div class="card-det">
-                                        <div
-                                            class="card-header"
-                                            id="headingFour"
-                                        >
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link collapsed"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseFour"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseFour"
-                                                >
-                                                    ¿Este producto tiene
-                                                    garantía de entrega?
-                                                </button>
-                                            </h2>
-                                        </div>
-                                        <div
-                                            id="collapseFour"
-                                            class="collapse"
-                                            aria-labelledby="headingFour"
-                                            data-parent="#accordion"
-                                        >
-                                            <div class="card-body">
-                                                Sí. Todas las órdenes tienen
-                                                garantía de entrega. Esto quiere
-                                                decir que están aseguradas para
-                                                llegar a destino. Tendrás
-                                                trazabilidad durante todo el
-                                                envío y posibilidad de
-                                                contactarnos.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </section>
                         </div>
                     </div>
