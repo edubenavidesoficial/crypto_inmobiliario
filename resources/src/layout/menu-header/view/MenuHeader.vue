@@ -169,7 +169,7 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                               <a class="dropdown-item" href="#">
-                                <form action="https://pulentaa.com/locale" method="POST">
+                                <form action="https://realty-lux.com/locale" method="POST">
                                   <input type="hidden" name="_token" value="JQqkU7qjztevnzrqit7r4j2LEmGH4KxVYXfNRFTq" />
                                   <div class="lag_select">
                                     <span class="font_12 f_w_500 text-uppercase mb_10 d-block">Language</span>
@@ -393,7 +393,7 @@
         Envío estándar gratis en todos los pedidos.<br>
         Envío express gratis en pedidos de más de $129.<br>
         Obtén un crédito $5.00 (envío estándar) o un crédito $13.00 (envío express) por entrega tardía.
-        Pulentaa cuenta con un requisito de pedido mínimo, lo que nos permite ofrecer una gama más amplia de artículos
+        Realty-lux cuenta con un requisito de pedido mínimo, lo que nos permite ofrecer una gama más amplia de artículos
         disponibles para el envío, incluidos tamaños más pequeños y más convenientes.<br> Nuestros requisitos de pedido
         mínimo
         se detallan antes de que realices tu pedido. </div>
@@ -426,11 +426,11 @@
                 de los artículos que compraste como daños, pérdidas o demoras, ten la seguridad de que haremos todo lo
                 posible para resolver cualquier problema y ofrecer las mejores soluciones.
                 $5.00 de crédito por retraso<br>
-                Si no entregamos tu pedido en o antes de la última fecha de entrega estimada de Pulentaa, te emitiremos
+                Si no entregamos tu pedido en o antes de la última fecha de entrega estimada de Realty-lux, te emitiremos
                 $5.00 de
                 crédito (Envío estándar) o $13.00 de crédito (Envío express) dentro de las 48 horas posteriores a esa
                 fecha.
-                El crédito se emitirá a tu saldo de crédito Pulentaa y se puede usar en tu próximo pedido.
+                El crédito se emitirá a tu saldo de crédito Realty-lux y se puede usar en tu próximo pedido.
                 Reembolso por artículo dañado<br>
                 Si recibes tu paquete y algunos artículos no llegaron o fueron dañados en tránsito, ten la seguridad de
                 que
@@ -469,17 +469,17 @@
                   Ajuste de precios</button></h2>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body text-justify small-text">Los artículos comprados en Pulentaa cumplen los requisitos de
+              <div class="card-body text-justify small-text">Los artículos comprados en Realty-lux cumplen los requisitos de
                 nuestra
                 política de ajuste de precios.
-                <br> Pulentaa proporcionará la diferencia de precio si el precio de lista del artículo
+                <br> Realty-lux proporcionará la diferencia de precio si el precio de lista del artículo
                 comprado se redujo en un plazo de 30 días después de la compra. <br>El envío de tu pedido no se verá
                 afectado
                 por la solicitud de un ajuste de precios antes de recibir los productos. Puedes solicitar un reembolso por
                 ajuste de precios seleccionando el pedido correspondiente en “Tus pedidos” y haciendo clic en el botón
                 “Solicitar un ajuste de precios”.<br>
                 Es posible que los artículos que se encuentran en liquidación, promociones o que ya no estén disponibles,
-                etc. no sean elegibles para el ajuste de precios. Pulentaa se reserva el derecho a la interpretación final
+                etc. no sean elegibles para el ajuste de precios. Realty-lux se reserva el derecho a la interpretación final
                 de
                 nuestra política de ajuste de precios, el derecho a modificar los términos de esta política en cualquier
                 momento y el derecho a denegar cualquier ajuste de precios a nuestra entera discreción.
