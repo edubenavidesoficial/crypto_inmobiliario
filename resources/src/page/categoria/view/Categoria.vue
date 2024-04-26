@@ -146,15 +146,6 @@
                                                         />
                                                     </a>
                                                 </div>
-                                                <span class="star"
-                                                    >&#9733;</span
-                                                >
-                                                <span class="star"
-                                                    >&#9733;</span
-                                                >
-                                                <span class="star"
-                                                    >&#9734;</span
-                                                >
                                             </div>
                                         </div>
                                     </div>
