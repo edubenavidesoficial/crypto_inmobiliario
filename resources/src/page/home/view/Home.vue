@@ -422,8 +422,7 @@
 <style scoped>
 .carousel__image {
   width: 100%;
-  height: 480px;
-  object-fit: cover;
+  height: 100%;
 }
 
 .p-00 {
