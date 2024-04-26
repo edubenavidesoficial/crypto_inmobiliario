@@ -35,12 +35,12 @@ export default {
     setup() {
         const carouselSlider = [
             {
-                url: "/uploads/images/21-10-2023/6534076f83b65.jpg",
+                url: "/uploads/images/21-10-2023/5.png",
                 alt: "Slider Principal",
                 title: "Slider Principal",
             },
             {
-                url: "/uploads/images/21-10-2023/6534076f83b66.jpg",
+                url: "/uploads/images/21-10-2023/6.png",
                 alt: "Slider Segundo",
                 title: "Slider Segundo",
             },
