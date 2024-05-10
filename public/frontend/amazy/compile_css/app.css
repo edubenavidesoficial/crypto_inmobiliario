@@ -33782,9 +33782,11 @@ header.amazcartui_header .header_area .header_topbar_area .header__wrapper .head
 }
 
 header.amazcartui_header .header_area .header_top_area {
-  background: #474b4e ;
-  padding: 12px 0px;
-  border: 0;
+  background: linear-gradient(to bottom, #474b4e, #2e3c49); /* Degradado vertical */
+  padding: 12px 0px; /* Añadir un espacio interno */
+  border: 0; /* Eliminar el borde */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+  border-radius: 8px; /* Agregar bordes redondeados */
 }
 
 @media (max-width: 991.98px) {
@@ -33800,8 +33802,7 @@ header.amazcartui_header .header_area .header_top_area .header__wrapper .header_
 @media (max-width: 767.98px) {
   header.amazcartui_header .header_area .header_top_area .header__wrapper .header__left {
     flex: 1 1 0;
-    justify-content: center;
-    margin-left: 22px;
+    justify-content: left;
   }
 }
 

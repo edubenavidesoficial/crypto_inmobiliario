@@ -17,7 +17,7 @@
                     <ul class="bKTvgBoH">
                         <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Política de devolución y reembolso</a></li>
                         <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Política de propiedad intelectual</a></li>
-                        <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Política de envíos</a></li>
+                        <li class="_3FUsk_Xl"><a href="" class="_3VEjS46S _1trc3v03" rel="">Política de token</a></li>
                     </ul>
                 </div>
                 <div class="_1OcLeWs0" id="thirdCol">
@@ -119,7 +119,7 @@
     <style>
     .ha{
     border-radius: 13px;
-    background: #ff8c09;
+    background: #1a1b1c;
 }
     </style>
     </body>

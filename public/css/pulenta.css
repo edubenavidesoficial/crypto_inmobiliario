@@ -330,7 +330,10 @@
     width: 100%;
     padding-top: 29px;
     margin-top: 60px;
-    background:#2e313d;
+  border: 0; /* Eliminar el borde */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+  border-radius: 8px; /* Agregar bordes redondeados */
+    background: linear-gradient(to bottom, #474b4e, #163854);
     color: #fff;
 }
 
@@ -559,11 +562,21 @@ img {
     }
   }
 
-  .card-img-top {
+ /* Estilo para todas las pantallas */
+.card-img-top {
     height: 200px;
     object-fit: cover;
     border-radius: 12px !important;
-  }
+}
+
+/* Estilo para pantallas con ancho máximo de 767px */
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 100px;
+        object-fit: cover;
+        border-radius: 12px !important;
+    }
+}
 
   .card-body-product {
     padding: 10px;

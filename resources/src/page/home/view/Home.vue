@@ -218,7 +218,7 @@
                   <div class="card-text-product">
                     <div class="product-name">{{ product.nombre }}</div>
                     <div class="product-price">
-                      ${{ product.precio}}<span class="cat"
+                      {{ product.precio}}<span class="cat"
                         ></span
                       >
                     </div>
@@ -432,35 +432,13 @@
 /* (dispositivos móviles) */
 @media only screen and (max-width: 767px) {
   .carousel__image {
-    height: 300px;
+    height: 150px;
   }
 
   .col-122 {
-    position: relative;
+    justify-self: start;;
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-/* Estilos para el modal */
-.modal {
-  position: absolute;
-  background: linear-gradient(to bottom, #b0b0b095, #d6d6d64a);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 50%;
-  height: 65%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.im-modal {
-  width: 100%; /* Ajusta según sea necesario */
-}
-@media (max-width: 768px) {
-  .modal {
-    max-height: 25%;
   }
 }
 </style>
