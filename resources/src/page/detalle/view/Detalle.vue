@@ -83,9 +83,9 @@
                                 <!-- Otros detalles del producto aquí -->
                             </div>
                             <p class="price-line-list_price">
-                                Precio:
+                                Precio del Token:
                                 <span class="currency_price">
-                                    ${{
+                                    {{
                                         product !== null ? product.precio : 0.0
                                     }}</span
                                 >
@@ -104,7 +104,8 @@
 
                             <div class="product-information">
                                 <div class="container" v-if="product !== null">
-                                    <h1>Detalle Precio</h1>
+                                    <img src="https://cdn-icons-png.freepik.com/256/8589/8589933.png" width="80px" alt="Token">
+                                   
                                 </div>
                                 <p class="detail-vendor_name">
     Cantidad:
@@ -122,13 +123,26 @@
                                 >
                                     Agregar
                                 </button>
-                                <br />
+                                <br><br>
+                                <button
+                                    type="button"
+                                    class="poduct-normal"
+                                    style="width: 330px;background: linear-gradient(to bottom, #474b4e, #2e3c49); color: aliceblue !important;"
+                                    title="Conectar Cartera"
+                                    v-on:click="realizar_pedido"
+                                >
+                                    Conectar Cartera
+                                </button>
                                 <br />
                                 <br />
                                 <div
                                     class="limited-list list-detail detail-short_desc"
                                 >
                                     <h3>Detalles del inmueble</h3>
+                                    <img src="https://cdn-icons-png.freepik.com/256/14446/14446124.png" width="40px" alt="Token">
+                                    <img src="https://cdn-icons-png.freepik.com/256/14446/14446159.png" width="40px" alt="Token">
+                                    <img src="https://cdn-icons-png.freepik.com/256/14446/14446132.png" width="40px" alt="Token">
+                                    <img src="https://cdn-icons-png.freepik.com/256/14446/14446253.png" width="40px" alt="Token">
                                     <div class="see-more-blur blur-short_desc">
                                         {{
                                             product !== null
@@ -165,6 +179,10 @@
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
                 Puedes adquirir tokens de inmuebles en Binance Smart Chain a través de plataformas de intercambio especializadas en activos tokenizados. Una vez que tengas BNB (la moneda nativa de Binance Smart Chain), puedes intercambiarlos por tokens de inmuebles disponibles en dichas plataformas.
+               
+               <br>
+                <img src=" https://metlabs.io/wp-content/uploads/2023/10/tokenizacion-inmobiliaria-espana.jpg"  width="30%" alt="Token">
+                
             </div>
         </div>
     </div>

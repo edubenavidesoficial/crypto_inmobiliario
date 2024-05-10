@@ -77,7 +77,7 @@
                                     <label
                                         class="form-check-label label-desktop"
                                         for="bestSellerFilter"
-                                        >Amazon</label
+                                        >Token</label
                                     >
                                 </div>
                                 <div class="form-check">
