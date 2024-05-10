@@ -54,7 +54,7 @@
                 <a @click="irCategoria(category.id)">
                   <div class="card_pulenta">
                     <img :src="category.image" :alt="category.name" />
-                    <span class="cat">Desde S/00</span>
+                    <span class="cat">Token Activo</span>
                     <div class="category-name">{{ category.name }}</div>
                   </div>
                 </a>
@@ -411,7 +411,7 @@
 .cat {
   border-radius: 23px;
   background-color: rgb(232 232 232);
-  color: #ff8c09 !important;
+  color: #303d49 !important;
   padding: 2px;
   font-size: 0.6rem;
 }
