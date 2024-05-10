@@ -86,11 +86,7 @@
                                         class="form-check-input"
                                         id="bestSellerFilter"
                                     />
-                                    <label
-                                        class="form-check-label label-desktop"
-                                        for="bestSellerFilter"
-                                        >Oferta</label
-                                    >
+                        
                                 </div>
                                 <button
                                     type="button"
